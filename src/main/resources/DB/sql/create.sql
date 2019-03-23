@@ -1,0 +1,8 @@
+CREATE TABLE `test_person` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `create_dt` datetime DEFAULT CURRENT_TIMESTAMP,
+  `update_dt` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
